@@ -7,9 +7,16 @@ import Checkout from '../components/checkout'
 import styled from "styled-components"
 
 const TshirtStyled = styled.div`
-max-width: 300px;
+
+max-height: 200;
+max-width: 200;
 display: grid;
-grid-template-columns: 1fr;
+grid-template-columns: 1fr 1fr;
+p, .lorum, .advanced {
+  padding-left: 2rem;
+}
+
+
 
 `;
 
@@ -17,17 +24,14 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <TshirtStyled>
-    <h1>T-shirt for sale</h1>
+    <h1>Tank Top</h1>
     <p>Hot t-shirts with the latest deisgns</p>
-    
-   
-    <div>
-      
       <Image />
-      
-    </div>
+      <p className="lorum">Meditation health goth whatever sartorial hella. Mustache actually art party, lomo humblebrag church-key iPhone microdosing edison bulb pour-over ugh 8-bit bushwick succulents retro. Fingerstache la croix pitchfork, pop-up fam lo-fi literally migas photo booth cliche marfa quinoa retro irony. Pabst tumblr aesthetic, authentic hella lomo chartreuse cold-pressed raw denim tacos 8-bit snackwave cray man bun pok pok. Chia microdosing vaporware palo santo ugh.</p>
+ 
+    
     <Checkout />
-    <Link to="/advanced/">Go to the advanced example</Link>
+    <Link className="advanced"to="/advanced/">Go to the advanced example</Link>
     </TshirtStyled>
   </Layout>
 )

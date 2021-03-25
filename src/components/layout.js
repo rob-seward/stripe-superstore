@@ -33,7 +33,7 @@ const Layout = ({ children }) => (
           {children}
           <footer>
             
-            <div>
+            <div style={{paddingTop:'10px'}}>
               <a href="https://stripe.com">
                 <img src={stripeLogo} alt="Payments powered by Stripe" />
               </a>

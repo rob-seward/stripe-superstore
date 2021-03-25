@@ -10,6 +10,7 @@ const buttonStyles = {
   backgroundColor: 'rgb(255, 178, 56)',
   borderRadius: '6px',
   letterSpacing: '1.5px',
+  marginTop: '20px'
 }
 
 const buttonDisabledStyles = {
